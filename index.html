@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Classic Tee</title>
+    <link rel="stylesheet" href="src/styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+      integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <header>
+      <button id="cartBtn">
+        My Cart (
+        <span id="cartItems">0</span>
+        )
+      </button>
+      <!-- Hidden Element -->
+      <button id="mobileCartBtn" class="mobileCart">
+        <i class="fas fa-shopping-cart mobileCart"></i>
+        (
+        <span id="cartItemsMobile">0</span>
+        )
+      </button>
+      <div id="shoppingCart"></div>
+    </header>
+    <main>
+      <section class="productGrid">
+        <img src="src/classic-tee.jpg" alt="Man wearing grey t-shirt" />
+        <div>
+          <h1>Classic Tee</h1>
+          <h2>$75.00</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam
+            alias pariatur maiores ducimus eius, ut dolore molestias tenetur
+            cumque, repellendus explicabo, velit atque facilis vel. Lorem ipsum
+            dolor sit amet consectetur adipisicing elit. Rerum, repudiandae!
+          </p>
+          <h3>
+            SIZE
+            <span class="star">*</span>
+            <span id="size"></span>
+          </h3>
+
+          <div class="sizes" id="sizeBtns">
+            <button value="S" class="sizingBtn">S</button>
+            <button value="M" class="sizingBtn">M</button>
+            <button value="L" class="sizingBtn">L</button>
+          </div>
+          <button id="addToCart">ADD TO CART</button>
+        </div>
+      </section>
+    </main>
+    <script src="src/app.js"></script>
+  </body>
+</html>
